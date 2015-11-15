@@ -1,5 +1,5 @@
 cbinson_test
-html\
-latex\
+html/
+latex/
 *.o
 
