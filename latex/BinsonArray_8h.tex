@@ -1,0 +1,284 @@
+\hypertarget{BinsonArray_8h}{\section{Binson\-Array.\-h File Reference}
+\label{BinsonArray_8h}\index{Binson\-Array.\-h@{Binson\-Array.\-h}}
+}
+{\ttfamily \#include \char`\"{}Binson\-Object.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structBinsonArray}{Binson\-Array} $\ast$ \hyperlink{BinsonArray_8h_a3f9d86bd8ff34aa1aea6fec32980186a}{c\-B\-S\-O\-N\-\_\-create\-\_\-array} ()
+\begin{DoxyCompactList}\small\item\em function to allocate memory to create a binson array. \end{DoxyCompactList}\item 
+void \hyperlink{BinsonArray_8h_a3f82881f29147aef0368714c50cc5a3f}{c\-B\-S\-O\-N\-\_\-free\-\_\-array} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array)
+\begin{DoxyCompactList}\small\item\em function to free memory allocated for a binson array. \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonArray_8h_a2c771e1b5cf4f93f8ded2e968d74941c}{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-integer} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, int64\-\_\-t value)
+\begin{DoxyCompactList}\small\item\em function to put a integer to binson array \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonArray_8h_aabaa81872729f338a0c671e108fa36f6}{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-double} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, double value)
+\begin{DoxyCompactList}\small\item\em function to put a double to binson array \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonArray_8h_a4b566b716081ac99b7fbef47e73d045f}{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-bool} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, bool value)
+\begin{DoxyCompactList}\small\item\em function to put a boolean value to binson array \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonArray_8h_ae910f090af5cdfa1368ffd3911d6124e}{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-string} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, const char $\ast$value)
+\begin{DoxyCompactList}\small\item\em function to put a null terminated string to binson array \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonArray_8h_a34f5f70bebe4b299e5f37f0186786c5f}{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-byte} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, const B\-Y\-T\-E $\ast$value, size\-\_\-t n\-Array\-Length)
+\begin{DoxyCompactList}\small\item\em function to put a byte array to binson array \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonArray_8h_a92e2125ccce2967b0ff59dd8dfa79b9f}{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-object} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, \hyperlink{structBinsonObject}{Binson\-Object} $\ast$value)
+\begin{DoxyCompactList}\small\item\em function to put a binson object to binson array \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonArray_8h_afed225e96189d94347eacdc382c49bf6}{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-array} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, \hyperlink{structBinsonArray}{Binson\-Array} $\ast$value)
+\begin{DoxyCompactList}\small\item\em function to put a binson array to binson array \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonArray_8h_a6da9401b718e0a5a6b438cf0270318f4}{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-item} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, size\-\_\-t idx)
+\begin{DoxyCompactList}\small\item\em function to get an item from binson array \end{DoxyCompactList}\item 
+int \hyperlink{BinsonArray_8h_ae475ee85f0fff26ba1e365ef8e2c9279}{c\-B\-S\-O\-N\-\_\-array\-\_\-remove\-\_\-item} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array, size\-\_\-t idx)
+\begin{DoxyCompactList}\small\item\em function to remove one item from the binson array \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{BinsonArray_8h_aeaf8cb2d0cc7e95fa96bec84cbe98b2d}{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-size} (\hyperlink{structBinsonArray}{Binson\-Array} $\ast$p\-Array)
+\begin{DoxyCompactList}\small\item\em function to get array size \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{BinsonArray_8h_a6da9401b718e0a5a6b438cf0270318f4}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-item@{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-item}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-item@{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-item}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-item (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{size\-\_\-t}]{idx}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_a6da9401b718e0a5a6b438cf0270318f4}
+
+
+function to get an item from binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em idx} & the index of the item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binson filed of that item 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_aeaf8cb2d0cc7e95fa96bec84cbe98b2d}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-size@{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-size}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-size@{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-size}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t c\-B\-S\-O\-N\-\_\-array\-\_\-get\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_aeaf8cb2d0cc7e95fa96bec84cbe98b2d}
+
+
+function to get array size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array size 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_afed225e96189d94347eacdc382c49bf6}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-array@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-array}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-array@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-array}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{{\bf Binson\-Array} $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_afed225e96189d94347eacdc382c49bf6}
+
+
+function to put a binson array to binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em value} & pointer to the binson array you want to instert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binson filed of that inserted binson array 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_a4b566b716081ac99b7fbef47e73d045f}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-bool@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-bool}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-bool@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-bool}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-bool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-bool (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_a4b566b716081ac99b7fbef47e73d045f}
+
+
+function to put a boolean value to binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em value} & boolean value for this field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binson filed of that inserted boolean object. 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_a34f5f70bebe4b299e5f37f0186786c5f}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-byte@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-byte}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-byte@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-byte}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-byte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-byte (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{const B\-Y\-T\-E $\ast$}]{value, }
+\item[{size\-\_\-t}]{n\-Array\-Length}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_a34f5f70bebe4b299e5f37f0186786c5f}
+
+
+function to put a byte array to binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em value} & the byte array. \\
+\hline
+{\em n\-Array\-Length} & length for this byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binson filed of that byte array. 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_aabaa81872729f338a0c671e108fa36f6}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-double@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-double}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-double@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-double}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-double (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_aabaa81872729f338a0c671e108fa36f6}
+
+
+function to put a double to binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em value} & double value for this field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binson filed of that inserted double object. 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_a2c771e1b5cf4f93f8ded2e968d74941c}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-integer@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-integer}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-integer@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-integer}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-integer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-integer (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{int64\-\_\-t}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_a2c771e1b5cf4f93f8ded2e968d74941c}
+
+
+function to put a integer to binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em value} & integer value for this field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binson filed of that inserted integer object. 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_a92e2125ccce2967b0ff59dd8dfa79b9f}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-object@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-object}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-object@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-object}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-object (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{{\bf Binson\-Object} $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_a92e2125ccce2967b0ff59dd8dfa79b9f}
+
+
+function to put a binson object to binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em value} & pointer to the binson object you want to instert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binson filed of that inserted binson object 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_ae910f090af5cdfa1368ffd3911d6124e}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-string@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-string}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-string@{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-string}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-array\-\_\-put\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_ae910f090af5cdfa1368ffd3911d6124e}
+
+
+function to put a null terminated string to binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em value} & null terminated string for this field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binson filed of that inserted null terminated string. 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_ae475ee85f0fff26ba1e365ef8e2c9279}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-array\-\_\-remove\-\_\-item@{c\-B\-S\-O\-N\-\_\-array\-\_\-remove\-\_\-item}}
+\index{c\-B\-S\-O\-N\-\_\-array\-\_\-remove\-\_\-item@{c\-B\-S\-O\-N\-\_\-array\-\_\-remove\-\_\-item}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-array\-\_\-remove\-\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-array\-\_\-remove\-\_\-item (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array, }
+\item[{size\-\_\-t}]{idx}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_ae475ee85f0fff26ba1e365ef8e2c9279}
+
+
+function to remove one item from the binson array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the binson array. \\
+\hline
+{\em idx} & the index of the item you want to remoev \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 successful, 1 failed 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_a3f9d86bd8ff34aa1aea6fec32980186a}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-create\-\_\-array@{c\-B\-S\-O\-N\-\_\-create\-\_\-array}}
+\index{c\-B\-S\-O\-N\-\_\-create\-\_\-array@{c\-B\-S\-O\-N\-\_\-create\-\_\-array}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-create\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Array}$\ast$ c\-B\-S\-O\-N\-\_\-create\-\_\-array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_a3f9d86bd8ff34aa1aea6fec32980186a}
+
+
+function to allocate memory to create a binson array. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the new created array 
+\end{DoxyReturn}
+\hypertarget{BinsonArray_8h_a3f82881f29147aef0368714c50cc5a3f}{\index{Binson\-Array.\-h@{Binson\-Array.\-h}!c\-B\-S\-O\-N\-\_\-free\-\_\-array@{c\-B\-S\-O\-N\-\_\-free\-\_\-array}}
+\index{c\-B\-S\-O\-N\-\_\-free\-\_\-array@{c\-B\-S\-O\-N\-\_\-free\-\_\-array}!BinsonArray.h@{Binson\-Array.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-free\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}void c\-B\-S\-O\-N\-\_\-free\-\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Array} $\ast$}]{p\-Array}
+\end{DoxyParamCaption}
+)}}\label{BinsonArray_8h_a3f82881f29147aef0368714c50cc5a3f}
+
+
+function to free memory allocated for a binson array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Array} & The pointer to the array \\
+\hline
+\end{DoxyParams}

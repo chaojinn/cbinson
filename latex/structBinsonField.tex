@@ -1,0 +1,76 @@
+\hypertarget{structBinsonField}{\section{Binson\-Field Struct Reference}
+\label{structBinsonField}\index{Binson\-Field@{Binson\-Field}}
+}
+
+
+struct to represent a binson field  
+
+
+
+
+{\ttfamily \#include $<$Binson\-Object.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{structBinsonField_a8e38391c6f73e3990fea571fd0727464}{field\-Name}
+\item 
+\hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4c}{Binson\-Value\-Type} \hyperlink{structBinsonField_af4bacf88052af7898a681ffc5742064a}{field\-Type}
+\item 
+bool \hyperlink{structBinsonField_afa4d89c72451975c7d417411620eb1e4}{boolean\-Value}
+\item 
+int64\-\_\-t \hyperlink{structBinsonField_a88bc4483faecd28e1671135d2eb911b8}{integer\-Value}
+\item 
+double \hyperlink{structBinsonField_a4c3793330dba024f159946039066fa7c}{double\-Value}
+\item 
+char $\ast$ \hyperlink{structBinsonField_a3ffa60989adcf3dd00b3caa00b7b2677}{string\-Value}
+\item 
+B\-Y\-T\-E $\ast$ \hyperlink{structBinsonField_a71fab57bcc18cc20a8aad41674f3f9ee}{byte\-Value}
+\item 
+size\-\_\-t \hyperlink{structBinsonField_a3b9044d4e96879907046a9f9bb8e5d66}{byte\-Array\-Len}
+\item 
+\hyperlink{structBinsonArray}{Binson\-Array} $\ast$ \hyperlink{structBinsonField_a40d1815efc1752e7702742db8c75a412}{array\-Value}
+\item 
+\hyperlink{structBinsonObject}{Binson\-Object} $\ast$ \hyperlink{structBinsonField_abc7256cc86bc89a5d4946e7a2cdea809}{object\-Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+struct to represent a binson field 
+
+\subsection{Member Data Documentation}
+\hypertarget{structBinsonField_a40d1815efc1752e7702742db8c75a412}{\index{Binson\-Field@{Binson\-Field}!array\-Value@{array\-Value}}
+\index{array\-Value@{array\-Value}!BinsonField@{Binson\-Field}}
+\subsubsection[{array\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Array}$\ast$ Binson\-Field\-::array\-Value}}\label{structBinsonField_a40d1815efc1752e7702742db8c75a412}
+binson array value, if field type is binson array , otherwise N\-U\-L\-L \hypertarget{structBinsonField_afa4d89c72451975c7d417411620eb1e4}{\index{Binson\-Field@{Binson\-Field}!boolean\-Value@{boolean\-Value}}
+\index{boolean\-Value@{boolean\-Value}!BinsonField@{Binson\-Field}}
+\subsubsection[{boolean\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Binson\-Field\-::boolean\-Value}}\label{structBinsonField_afa4d89c72451975c7d417411620eb1e4}
+boolean value, if field type is boolean , otherwise false \hypertarget{structBinsonField_a3b9044d4e96879907046a9f9bb8e5d66}{\index{Binson\-Field@{Binson\-Field}!byte\-Array\-Len@{byte\-Array\-Len}}
+\index{byte\-Array\-Len@{byte\-Array\-Len}!BinsonField@{Binson\-Field}}
+\subsubsection[{byte\-Array\-Len}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Binson\-Field\-::byte\-Array\-Len}}\label{structBinsonField_a3b9044d4e96879907046a9f9bb8e5d66}
+byte array length, if field type is not byte array , it is 0 \hypertarget{structBinsonField_a71fab57bcc18cc20a8aad41674f3f9ee}{\index{Binson\-Field@{Binson\-Field}!byte\-Value@{byte\-Value}}
+\index{byte\-Value@{byte\-Value}!BinsonField@{Binson\-Field}}
+\subsubsection[{byte\-Value}]{\setlength{\rightskip}{0pt plus 5cm}B\-Y\-T\-E$\ast$ Binson\-Field\-::byte\-Value}}\label{structBinsonField_a71fab57bcc18cc20a8aad41674f3f9ee}
+byte array value, if field type is byte array , otherwise N\-U\-L\-L \hypertarget{structBinsonField_a4c3793330dba024f159946039066fa7c}{\index{Binson\-Field@{Binson\-Field}!double\-Value@{double\-Value}}
+\index{double\-Value@{double\-Value}!BinsonField@{Binson\-Field}}
+\subsubsection[{double\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double Binson\-Field\-::double\-Value}}\label{structBinsonField_a4c3793330dba024f159946039066fa7c}
+double value, if field type is double , otherwise 0 \hypertarget{structBinsonField_a8e38391c6f73e3990fea571fd0727464}{\index{Binson\-Field@{Binson\-Field}!field\-Name@{field\-Name}}
+\index{field\-Name@{field\-Name}!BinsonField@{Binson\-Field}}
+\subsubsection[{field\-Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Binson\-Field\-::field\-Name}}\label{structBinsonField_a8e38391c6f73e3990fea571fd0727464}
+field name \hypertarget{structBinsonField_af4bacf88052af7898a681ffc5742064a}{\index{Binson\-Field@{Binson\-Field}!field\-Type@{field\-Type}}
+\index{field\-Type@{field\-Type}!BinsonField@{Binson\-Field}}
+\subsubsection[{field\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Value\-Type} Binson\-Field\-::field\-Type}}\label{structBinsonField_af4bacf88052af7898a681ffc5742064a}
+field type \hypertarget{structBinsonField_a88bc4483faecd28e1671135d2eb911b8}{\index{Binson\-Field@{Binson\-Field}!integer\-Value@{integer\-Value}}
+\index{integer\-Value@{integer\-Value}!BinsonField@{Binson\-Field}}
+\subsubsection[{integer\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int64\-\_\-t Binson\-Field\-::integer\-Value}}\label{structBinsonField_a88bc4483faecd28e1671135d2eb911b8}
+integer value, if field type is integer , otherwise 0 \hypertarget{structBinsonField_abc7256cc86bc89a5d4946e7a2cdea809}{\index{Binson\-Field@{Binson\-Field}!object\-Value@{object\-Value}}
+\index{object\-Value@{object\-Value}!BinsonField@{Binson\-Field}}
+\subsubsection[{object\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Object}$\ast$ Binson\-Field\-::object\-Value}}\label{structBinsonField_abc7256cc86bc89a5d4946e7a2cdea809}
+binson object value, if field type is binson object , otherwise N\-U\-L\-L \hypertarget{structBinsonField_a3ffa60989adcf3dd00b3caa00b7b2677}{\index{Binson\-Field@{Binson\-Field}!string\-Value@{string\-Value}}
+\index{string\-Value@{string\-Value}!BinsonField@{Binson\-Field}}
+\subsubsection[{string\-Value}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Binson\-Field\-::string\-Value}}\label{structBinsonField_a3ffa60989adcf3dd00b3caa00b7b2677}
+string value, if field type is string , otherwise N\-U\-L\-L 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BinsonObject_8h}{Binson\-Object.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+SRCS = BinsonArray.c BinsonObject.c red_black_tree.c stack.c misc.c
+
+PROGRAM = libcbinson.a
+
+.PHONY:	mem_check clean
+
+#all: $(PROGRAM)
+all:
+	gcc -std=c99 -Wall -pedantic -c $(SRCS)
+	ar rcs $(PROGRAM) BinsonArray.o BinsonObject.o red_black_tree.o stack.o misc.o
+test:
+	gcc -std=c99 $(SRCS) CBinsonUnitTest.c -o cbinson_test
+
+clean:			
+	rm -f *.o *~ $(PROGRAM)
+
+
+
+
+
+

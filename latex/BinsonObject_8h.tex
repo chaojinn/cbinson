@@ -1,0 +1,538 @@
+\hypertarget{BinsonObject_8h}{\section{Binson\-Object.\-h File Reference}
+\label{BinsonObject_8h}\index{Binson\-Object.\-h@{Binson\-Object.\-h}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdint.\-h$>$}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}red\-\_\-black\-\_\-tree.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structBinsonObject}{Binson\-Object}
+\begin{DoxyCompactList}\small\item\em struct to represent a binson object \end{DoxyCompactList}\item 
+struct \hyperlink{structBinsonArray}{Binson\-Array}
+\begin{DoxyCompactList}\small\item\em struct to represent a binson array \end{DoxyCompactList}\item 
+struct \hyperlink{structBinsonField}{Binson\-Field}
+\begin{DoxyCompactList}\small\item\em struct to represent a binson field \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{BinsonObject_8h_afd0b2e9f0bcbba288abc289d738a8f5d}{typedef int8\-\_\-t {\bfseries B\-Y\-T\-E}}\label{BinsonObject_8h_afd0b2e9f0bcbba288abc289d738a8f5d}
+
+\item 
+\hypertarget{BinsonObject_8h_a6a4cd807c2837f6769981c69c6862255}{typedef struct \hyperlink{structBinsonField}{Binson\-Field} {\bfseries Binson\-Field}}\label{BinsonObject_8h_a6a4cd807c2837f6769981c69c6862255}
+
+\item 
+\hypertarget{BinsonObject_8h_aea06ecc6c75ae844f0feb66040cf6937}{typedef struct \hyperlink{structBinsonArray}{Binson\-Array} {\bfseries Binson\-Array}}\label{BinsonObject_8h_aea06ecc6c75ae844f0feb66040cf6937}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4c}{Binson\-Value\-Type} \{ \\*
+\hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cad60fbf033900d76f926b09790318c4f6}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-O\-O\-L\-E\-A\-N}, 
+\hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cabca1f4ed0f386f75158da86330d9cde4}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R}, 
+\hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cabfcfb85257205dfad1148f88e7675950}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-D\-O\-U\-B\-L\-E}, 
+\hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca83acce0871337a68a22c7c9d7b8c5c4a}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G}, 
+\\*
+\hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4caa981db7bbadcea0b8f791e57f81791ea}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-S}, 
+\hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca248510c62bbfddd812265ef599d15fd7}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-R\-R\-A\-Y}, 
+\hyperlink{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca89b3e2a524247e6bac729394dbda6a27}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-O\-B\-J\-E\-C\-T}
+ \}
+\item 
+enum \hyperlink{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18}{Int\-Value\-Type} \{ \hyperlink{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a4d0075b3204a6c57c9a2c292f8ddb307}{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-R\-M\-A\-L}, 
+\hyperlink{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a75182953aa9c35ae64f29f240ff6ad24}{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}, 
+\hyperlink{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a8726ee486aa7c3d73cc39a58b6f9c14c}{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-A\-R\-R\-\_\-\-L\-E\-N\-G\-T\-H}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structBinsonObject}{Binson\-Object} $\ast$ \hyperlink{BinsonObject_8h_a4d0cd4d28560ffd39793a607039850ab}{c\-B\-S\-O\-N\-\_\-create\-\_\-binson\-\_\-object} ()
+\begin{DoxyCompactList}\small\item\em function to allocate memory to create a binson object. \end{DoxyCompactList}\item 
+void \hyperlink{BinsonObject_8h_a7c0b3d4e4f0b1a3186e3961793516c05}{c\-B\-S\-O\-N\-\_\-free\-\_\-binson\-\_\-object} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj)
+\begin{DoxyCompactList}\small\item\em function to free memory allocated for a binson object. \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$$\ast$ \hyperlink{BinsonObject_8h_a70514123d18aa38f639a0cedaeebb13f}{c\-B\-S\-O\-N\-\_\-get\-\_\-fields} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, size\-\_\-t $\ast$size)
+\begin{DoxyCompactList}\small\item\em function to return a list of \hyperlink{structBinsonField}{Binson\-Field} pointers, allow linear access to all the fields \end{DoxyCompactList}\item 
+bool \hyperlink{BinsonObject_8h_a845d5670aff351c929bf43a39a1e855a}{c\-B\-S\-O\-N\-\_\-has\-\_\-value} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name)
+\begin{DoxyCompactList}\small\item\em function to check if certain field exists in this binson object \end{DoxyCompactList}\item 
+\hyperlink{structBinsonField}{Binson\-Field} $\ast$ \hyperlink{BinsonObject_8h_ac06fcaec7c3533a80d0d35f4798912b5}{c\-B\-S\-O\-N\-\_\-get\-\_\-field} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name)
+\begin{DoxyCompactList}\small\item\em function to get a specific field from a binson object \end{DoxyCompactList}\item 
+\hyperlink{structBinsonObject}{Binson\-Object} $\ast$ \hyperlink{BinsonObject_8h_ab0158e12be697f25d71e77a1553cf2a8}{c\-B\-S\-O\-N\-\_\-get\-\_\-object} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name)
+\begin{DoxyCompactList}\small\item\em function to get a specific binson object field by name, if the field is not an object type field, return N\-U\-L\-L \end{DoxyCompactList}\item 
+\hyperlink{structBinsonArray}{Binson\-Array} $\ast$ \hyperlink{BinsonObject_8h_a8a2862f5b5a5186d7fcf88e0f4cc7911}{c\-B\-S\-O\-N\-\_\-get\-\_\-array} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name)
+\begin{DoxyCompactList}\small\item\em function to get a specific binson array field by name, if the field is not an array type field, return N\-U\-L\-L \end{DoxyCompactList}\item 
+int \hyperlink{BinsonObject_8h_a5aa114cff2b03c5c6cd56a6656f02750}{c\-B\-S\-O\-N\-\_\-put\-\_\-bool} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name, bool value)
+\begin{DoxyCompactList}\small\item\em function to create/set a boolean binson field \end{DoxyCompactList}\item 
+int \hyperlink{BinsonObject_8h_aa5963457af7ae2586a6018ff6540b1bc}{c\-B\-S\-O\-N\-\_\-put\-\_\-integer} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name, int64\-\_\-t value)
+\begin{DoxyCompactList}\small\item\em function to create/set a integer binson field \end{DoxyCompactList}\item 
+int \hyperlink{BinsonObject_8h_a947ca4afe0612bacbe3ea3d76a61ee48}{c\-B\-S\-O\-N\-\_\-put\-\_\-double} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name, double value)
+\begin{DoxyCompactList}\small\item\em function to create/set a double binson field \end{DoxyCompactList}\item 
+int \hyperlink{BinsonObject_8h_a14a5ae94412cb28d7bd44303ed8d69f8}{c\-B\-S\-O\-N\-\_\-put\-\_\-string} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name, const char $\ast$value)
+\begin{DoxyCompactList}\small\item\em function to create/set a string binson field \end{DoxyCompactList}\item 
+int \hyperlink{BinsonObject_8h_a08ee0ffcb971373e63bab8c7fd6ca172}{c\-B\-S\-O\-N\-\_\-put\-\_\-byte} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name, const B\-Y\-T\-E $\ast$value, size\-\_\-t length)
+\begin{DoxyCompactList}\small\item\em function to create/set a byte array binson field \end{DoxyCompactList}\item 
+int \hyperlink{BinsonObject_8h_a4e4f2a9e9e40c86eaf5612600e19fc5b}{c\-B\-S\-O\-N\-\_\-put\-\_\-array} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name, \hyperlink{structBinsonArray}{Binson\-Array} $\ast$value)
+\begin{DoxyCompactList}\small\item\em function to create/set an array binson field \end{DoxyCompactList}\item 
+int \hyperlink{BinsonObject_8h_a23e95c50b5e95bb1d05ef1dbf66d1b35}{c\-B\-S\-O\-N\-\_\-put\-\_\-object} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, const char $\ast$str\-Name, \hyperlink{structBinsonObject}{Binson\-Object} $\ast$value)
+\begin{DoxyCompactList}\small\item\em function to create/set an object binson field \end{DoxyCompactList}\item 
+B\-Y\-T\-E $\ast$ \hyperlink{BinsonObject_8h_a1b3872f0b4696f8c88bbc435dde86ba0}{c\-B\-S\-O\-N\-\_\-to\-\_\-bytes} (\hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj, size\-\_\-t $\ast$size)
+\begin{DoxyCompactList}\small\item\em function to serialize a binson object to byte array, please free the byte after use \end{DoxyCompactList}\item 
+\hyperlink{structBinsonObject}{Binson\-Object} $\ast$ \hyperlink{BinsonObject_8h_ac25e5db0f70bc2936c3e088369b739ca}{c\-B\-S\-O\-N\-\_\-from\-\_\-bytes} (B\-Y\-T\-E $\ast$raw\-Data, size\-\_\-t byte\-Size)
+\begin{DoxyCompactList}\small\item\em function to create a binson object from a byte array \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{BinsonObject_8h_a7ae9069ccae9bac47d27515b9d7cbc02}{c\-B\-S\-O\-N\-\_\-to\-\_\-\-J\-S\-O\-N\-\_\-string} (const \hyperlink{structBinsonObject}{Binson\-Object} $\ast$p\-Obj)
+\begin{DoxyCompactList}\small\item\em function to convert a binson object to a json string \end{DoxyCompactList}\item 
+int \hyperlink{BinsonObject_8h_a09d61d58162b336fc7c5287e96f422dc}{c\-B\-S\-O\-N\-\_\-from\-\_\-\-J\-S\-O\-N\-\_\-string} (char $\ast$raw\-J\-S\-O\-N\-Data, \hyperlink{structBinsonObject}{Binson\-Object} $\ast$$\ast$p\-Obj)
+\begin{DoxyCompactList}\small\item\em function to create a binson object by parsing a json string \end{DoxyCompactList}\item 
+void \hyperlink{BinsonObject_8h_a8d309f7e83d3d6d5f98e2aa5fe92c129}{c\-B\-S\-O\-N\-\_\-print\-\_\-byte\-\_\-array} (B\-Y\-T\-E $\ast$arr, size\-\_\-t length)
+\begin{DoxyCompactList}\small\item\em function to print byte array to std out \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4c}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!Binson\-Value\-Type@{Binson\-Value\-Type}}
+\index{Binson\-Value\-Type@{Binson\-Value\-Type}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{Binson\-Value\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Binson\-Value\-Type}}}\label{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4c}
+Enumation Binson\-Value\-Type {\bfseries Enumation} for Binson field types \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-O\-O\-L\-E\-A\-N@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-O\-O\-L\-E\-A\-N}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-O\-O\-L\-E\-A\-N@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-O\-O\-L\-E\-A\-N}}\item[{\em 
+\hypertarget{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cad60fbf033900d76f926b09790318c4f6}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-O\-O\-L\-E\-A\-N}\label{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cad60fbf033900d76f926b09790318c4f6}
+}]enum value for boolean type \index{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R}}\item[{\em 
+\hypertarget{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cabca1f4ed0f386f75158da86330d9cde4}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R}\label{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cabca1f4ed0f386f75158da86330d9cde4}
+}]enum value for integer type \index{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-D\-O\-U\-B\-L\-E@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-D\-O\-U\-B\-L\-E}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-D\-O\-U\-B\-L\-E@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-D\-O\-U\-B\-L\-E}}\item[{\em 
+\hypertarget{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cabfcfb85257205dfad1148f88e7675950}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-D\-O\-U\-B\-L\-E}\label{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4cabfcfb85257205dfad1148f88e7675950}
+}]enum value for double type \index{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G}}\item[{\em 
+\hypertarget{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca83acce0871337a68a22c7c9d7b8c5c4a}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G}\label{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca83acce0871337a68a22c7c9d7b8c5c4a}
+}]enum value for string type \index{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-S@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-S}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-S@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-S}}\item[{\em 
+\hypertarget{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4caa981db7bbadcea0b8f791e57f81791ea}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-S}\label{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4caa981db7bbadcea0b8f791e57f81791ea}
+}]enum value for byte array type \index{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-R\-R\-A\-Y@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-R\-R\-A\-Y}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-R\-R\-A\-Y@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-R\-R\-A\-Y}}\item[{\em 
+\hypertarget{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca248510c62bbfddd812265ef599d15fd7}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-R\-R\-A\-Y}\label{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca248510c62bbfddd812265ef599d15fd7}
+}]enum value for array type \index{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-O\-B\-J\-E\-C\-T@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-O\-B\-J\-E\-C\-T}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-O\-B\-J\-E\-C\-T@{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-O\-B\-J\-E\-C\-T}}\item[{\em 
+\hypertarget{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca89b3e2a524247e6bac729394dbda6a27}{B\-S\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-\-O\-B\-J\-E\-C\-T}\label{BinsonObject_8h_acb56f3e416175bad42a8ad708f4e8b4ca89b3e2a524247e6bac729394dbda6a27}
+}]enum value for object type \end{description}
+\end{Desc}
+\hypertarget{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!Int\-Value\-Type@{Int\-Value\-Type}}
+\index{Int\-Value\-Type@{Int\-Value\-Type}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{Int\-Value\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Int\-Value\-Type}}}\label{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-R\-M\-A\-L@{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-R\-M\-A\-L}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-R\-M\-A\-L@{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-R\-M\-A\-L}}\item[{\em 
+\hypertarget{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a4d0075b3204a6c57c9a2c292f8ddb307}{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-R\-M\-A\-L}\label{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a4d0075b3204a6c57c9a2c292f8ddb307}
+}]enum value for boolean type \index{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}}\item[{\em 
+\hypertarget{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a75182953aa9c35ae64f29f240ff6ad24}{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}\label{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a75182953aa9c35ae64f29f240ff6ad24}
+}]enum value for integer type \index{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-A\-R\-R\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-A\-R\-R\-\_\-\-L\-E\-N\-G\-T\-H}!Binson\-Object.\-h@{Binson\-Object.\-h}}\index{Binson\-Object.\-h@{Binson\-Object.\-h}!I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-A\-R\-R\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-A\-R\-R\-\_\-\-L\-E\-N\-G\-T\-H}}\item[{\em 
+\hypertarget{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a8726ee486aa7c3d73cc39a58b6f9c14c}{I\-N\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-Y\-T\-E\-A\-R\-R\-\_\-\-L\-E\-N\-G\-T\-H}\label{BinsonObject_8h_a0bd44a13d360dbe7ce51b58d84e86b18a8726ee486aa7c3d73cc39a58b6f9c14c}
+}]enum value for double type \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{BinsonObject_8h_a4d0cd4d28560ffd39793a607039850ab}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-create\-\_\-binson\-\_\-object@{c\-B\-S\-O\-N\-\_\-create\-\_\-binson\-\_\-object}}
+\index{c\-B\-S\-O\-N\-\_\-create\-\_\-binson\-\_\-object@{c\-B\-S\-O\-N\-\_\-create\-\_\-binson\-\_\-object}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-create\-\_\-binson\-\_\-object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Object}$\ast$ c\-B\-S\-O\-N\-\_\-create\-\_\-binson\-\_\-object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a4d0cd4d28560ffd39793a607039850ab}
+
+
+function to allocate memory to create a binson object. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the new created object 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a7c0b3d4e4f0b1a3186e3961793516c05}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-free\-\_\-binson\-\_\-object@{c\-B\-S\-O\-N\-\_\-free\-\_\-binson\-\_\-object}}
+\index{c\-B\-S\-O\-N\-\_\-free\-\_\-binson\-\_\-object@{c\-B\-S\-O\-N\-\_\-free\-\_\-binson\-\_\-object}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-free\-\_\-binson\-\_\-object}]{\setlength{\rightskip}{0pt plus 5cm}void c\-B\-S\-O\-N\-\_\-free\-\_\-binson\-\_\-object (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a7c0b3d4e4f0b1a3186e3961793516c05}
+
+
+function to free memory allocated for a binson object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the new created object \\
+\hline
+\end{DoxyParams}
+\hypertarget{BinsonObject_8h_ac25e5db0f70bc2936c3e088369b739ca}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-from\-\_\-bytes@{c\-B\-S\-O\-N\-\_\-from\-\_\-bytes}}
+\index{c\-B\-S\-O\-N\-\_\-from\-\_\-bytes@{c\-B\-S\-O\-N\-\_\-from\-\_\-bytes}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-from\-\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Object}$\ast$ c\-B\-S\-O\-N\-\_\-from\-\_\-bytes (
+\begin{DoxyParamCaption}
+\item[{B\-Y\-T\-E $\ast$}]{raw\-Data, }
+\item[{size\-\_\-t}]{byte\-Size}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_ac25e5db0f70bc2936c3e088369b739ca}
+
+
+function to create a binson object from a byte array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\-Data} & byte array contains the binson data \\
+\hline
+{\em p\-Obj} & The pointer to the binson object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if failed to parse the object 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a09d61d58162b336fc7c5287e96f422dc}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-from\-\_\-\-J\-S\-O\-N\-\_\-string@{c\-B\-S\-O\-N\-\_\-from\-\_\-\-J\-S\-O\-N\-\_\-string}}
+\index{c\-B\-S\-O\-N\-\_\-from\-\_\-\-J\-S\-O\-N\-\_\-string@{c\-B\-S\-O\-N\-\_\-from\-\_\-\-J\-S\-O\-N\-\_\-string}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-from\-\_\-\-J\-S\-O\-N\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-from\-\_\-\-J\-S\-O\-N\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{raw\-J\-S\-O\-N\-Data, }
+\item[{{\bf Binson\-Object} $\ast$$\ast$}]{p\-Obj}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a09d61d58162b336fc7c5287e96f422dc}
+
+
+function to create a binson object by parsing a json string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\-Data} & byte array contains the json string \\
+\hline
+{\em p\-Obj} & The pointer to the binson object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if failed to parse the object 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a8a2862f5b5a5186d7fcf88e0f4cc7911}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-get\-\_\-array@{c\-B\-S\-O\-N\-\_\-get\-\_\-array}}
+\index{c\-B\-S\-O\-N\-\_\-get\-\_\-array@{c\-B\-S\-O\-N\-\_\-get\-\_\-array}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-get\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Array}$\ast$ c\-B\-S\-O\-N\-\_\-get\-\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a8a2862f5b5a5186d7fcf88e0f4cc7911}
+
+
+function to get a specific binson array field by name, if the field is not an array type field, return N\-U\-L\-L 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson array. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the binson array . 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_ac06fcaec7c3533a80d0d35f4798912b5}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-get\-\_\-field@{c\-B\-S\-O\-N\-\_\-get\-\_\-field}}
+\index{c\-B\-S\-O\-N\-\_\-get\-\_\-field@{c\-B\-S\-O\-N\-\_\-get\-\_\-field}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-get\-\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$ c\-B\-S\-O\-N\-\_\-get\-\_\-field (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_ac06fcaec7c3533a80d0d35f4798912b5}
+
+
+function to get a specific field from a binson object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the binson field object, if not found then N\-U\-L\-L 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a70514123d18aa38f639a0cedaeebb13f}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-get\-\_\-fields@{c\-B\-S\-O\-N\-\_\-get\-\_\-fields}}
+\index{c\-B\-S\-O\-N\-\_\-get\-\_\-fields@{c\-B\-S\-O\-N\-\_\-get\-\_\-fields}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-get\-\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Field}$\ast$$\ast$ c\-B\-S\-O\-N\-\_\-get\-\_\-fields (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{size\-\_\-t $\ast$}]{size}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a70514123d18aa38f639a0cedaeebb13f}
+
+
+function to return a list of \hyperlink{structBinsonField}{Binson\-Field} pointers, allow linear access to all the fields 
+
+\begin{DoxyReturn}{Returns}
+a list of \hyperlink{structBinsonField}{Binson\-Field} pointers. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_ab0158e12be697f25d71e77a1553cf2a8}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-get\-\_\-object@{c\-B\-S\-O\-N\-\_\-get\-\_\-object}}
+\index{c\-B\-S\-O\-N\-\_\-get\-\_\-object@{c\-B\-S\-O\-N\-\_\-get\-\_\-object}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-get\-\_\-object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binson\-Object}$\ast$ c\-B\-S\-O\-N\-\_\-get\-\_\-object (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_ab0158e12be697f25d71e77a1553cf2a8}
+
+
+function to get a specific binson object field by name, if the field is not an object type field, return N\-U\-L\-L 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the binson object. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a845d5670aff351c929bf43a39a1e855a}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-has\-\_\-value@{c\-B\-S\-O\-N\-\_\-has\-\_\-value}}
+\index{c\-B\-S\-O\-N\-\_\-has\-\_\-value@{c\-B\-S\-O\-N\-\_\-has\-\_\-value}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-has\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}bool c\-B\-S\-O\-N\-\_\-has\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a845d5670aff351c929bf43a39a1e855a}
+
+
+function to check if certain field exists in this binson object 
+
+\begin{DoxyReturn}{Returns}
+true if field exists, false if not 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a8d309f7e83d3d6d5f98e2aa5fe92c129}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-print\-\_\-byte\-\_\-array@{c\-B\-S\-O\-N\-\_\-print\-\_\-byte\-\_\-array}}
+\index{c\-B\-S\-O\-N\-\_\-print\-\_\-byte\-\_\-array@{c\-B\-S\-O\-N\-\_\-print\-\_\-byte\-\_\-array}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-print\-\_\-byte\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}void c\-B\-S\-O\-N\-\_\-print\-\_\-byte\-\_\-array (
+\begin{DoxyParamCaption}
+\item[{B\-Y\-T\-E $\ast$}]{arr, }
+\item[{size\-\_\-t}]{length}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a8d309f7e83d3d6d5f98e2aa5fe92c129}
+
+
+function to print byte array to std out 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & the byte array \\
+\hline
+{\em length} & length of the byte array \\
+\hline
+\end{DoxyParams}
+\hypertarget{BinsonObject_8h_a4e4f2a9e9e40c86eaf5612600e19fc5b}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-put\-\_\-array@{c\-B\-S\-O\-N\-\_\-put\-\_\-array}}
+\index{c\-B\-S\-O\-N\-\_\-put\-\_\-array@{c\-B\-S\-O\-N\-\_\-put\-\_\-array}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-put\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-put\-\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name, }
+\item[{{\bf Binson\-Array} $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a4e4f2a9e9e40c86eaf5612600e19fc5b}
+
+
+function to create/set an array binson field 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+{\em value} & pointer to the binson array object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise failed. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a5aa114cff2b03c5c6cd56a6656f02750}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-put\-\_\-bool@{c\-B\-S\-O\-N\-\_\-put\-\_\-bool}}
+\index{c\-B\-S\-O\-N\-\_\-put\-\_\-bool@{c\-B\-S\-O\-N\-\_\-put\-\_\-bool}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-put\-\_\-bool}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-put\-\_\-bool (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a5aa114cff2b03c5c6cd56a6656f02750}
+
+
+function to create/set a boolean binson field 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+{\em value} & boolean value for this field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise failed. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a08ee0ffcb971373e63bab8c7fd6ca172}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-put\-\_\-byte@{c\-B\-S\-O\-N\-\_\-put\-\_\-byte}}
+\index{c\-B\-S\-O\-N\-\_\-put\-\_\-byte@{c\-B\-S\-O\-N\-\_\-put\-\_\-byte}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-put\-\_\-byte}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-put\-\_\-byte (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name, }
+\item[{const B\-Y\-T\-E $\ast$}]{value, }
+\item[{size\-\_\-t}]{length}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a08ee0ffcb971373e63bab8c7fd6ca172}
+
+
+function to create/set a byte array binson field 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+{\em value} & byte array value for this field. \\
+\hline
+{\em length} & byte length of the byte array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise failed. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a947ca4afe0612bacbe3ea3d76a61ee48}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-put\-\_\-double@{c\-B\-S\-O\-N\-\_\-put\-\_\-double}}
+\index{c\-B\-S\-O\-N\-\_\-put\-\_\-double@{c\-B\-S\-O\-N\-\_\-put\-\_\-double}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-put\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-put\-\_\-double (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a947ca4afe0612bacbe3ea3d76a61ee48}
+
+
+function to create/set a double binson field 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+{\em value} & double value for this field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise failed. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_aa5963457af7ae2586a6018ff6540b1bc}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-put\-\_\-integer@{c\-B\-S\-O\-N\-\_\-put\-\_\-integer}}
+\index{c\-B\-S\-O\-N\-\_\-put\-\_\-integer@{c\-B\-S\-O\-N\-\_\-put\-\_\-integer}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-put\-\_\-integer}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-put\-\_\-integer (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name, }
+\item[{int64\-\_\-t}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_aa5963457af7ae2586a6018ff6540b1bc}
+
+
+function to create/set a integer binson field 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+{\em value} & integer value for this field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise failed. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a23e95c50b5e95bb1d05ef1dbf66d1b35}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-put\-\_\-object@{c\-B\-S\-O\-N\-\_\-put\-\_\-object}}
+\index{c\-B\-S\-O\-N\-\_\-put\-\_\-object@{c\-B\-S\-O\-N\-\_\-put\-\_\-object}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-put\-\_\-object}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-put\-\_\-object (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name, }
+\item[{{\bf Binson\-Object} $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a23e95c50b5e95bb1d05ef1dbf66d1b35}
+
+
+function to create/set an object binson field 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+{\em value} & pointer to the binson object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise failed. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a14a5ae94412cb28d7bd44303ed8d69f8}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-put\-\_\-string@{c\-B\-S\-O\-N\-\_\-put\-\_\-string}}
+\index{c\-B\-S\-O\-N\-\_\-put\-\_\-string@{c\-B\-S\-O\-N\-\_\-put\-\_\-string}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-put\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}int c\-B\-S\-O\-N\-\_\-put\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{const char $\ast$}]{str\-Name, }
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a14a5ae94412cb28d7bd44303ed8d69f8}
+
+
+function to create/set a string binson field 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+{\em str\-Name} & zero terminated string represents the field name. \\
+\hline
+{\em value} & string value for this field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise failed. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a1b3872f0b4696f8c88bbc435dde86ba0}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-to\-\_\-bytes@{c\-B\-S\-O\-N\-\_\-to\-\_\-bytes}}
+\index{c\-B\-S\-O\-N\-\_\-to\-\_\-bytes@{c\-B\-S\-O\-N\-\_\-to\-\_\-bytes}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-to\-\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}B\-Y\-T\-E$\ast$ c\-B\-S\-O\-N\-\_\-to\-\_\-bytes (
+\begin{DoxyParamCaption}
+\item[{{\bf Binson\-Object} $\ast$}]{p\-Obj, }
+\item[{size\-\_\-t $\ast$}]{size}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a1b3872f0b4696f8c88bbc435dde86ba0}
+
+
+function to serialize a binson object to byte array, please free the byte after use 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the byte array contains the serialized object. N\-U\-L\-L if failed. 
+\end{DoxyReturn}
+\hypertarget{BinsonObject_8h_a7ae9069ccae9bac47d27515b9d7cbc02}{\index{Binson\-Object.\-h@{Binson\-Object.\-h}!c\-B\-S\-O\-N\-\_\-to\-\_\-\-J\-S\-O\-N\-\_\-string@{c\-B\-S\-O\-N\-\_\-to\-\_\-\-J\-S\-O\-N\-\_\-string}}
+\index{c\-B\-S\-O\-N\-\_\-to\-\_\-\-J\-S\-O\-N\-\_\-string@{c\-B\-S\-O\-N\-\_\-to\-\_\-\-J\-S\-O\-N\-\_\-string}!BinsonObject.h@{Binson\-Object.\-h}}
+\subsubsection[{c\-B\-S\-O\-N\-\_\-to\-\_\-\-J\-S\-O\-N\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ c\-B\-S\-O\-N\-\_\-to\-\_\-\-J\-S\-O\-N\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{const {\bf Binson\-Object} $\ast$}]{p\-Obj}
+\end{DoxyParamCaption}
+)}}\label{BinsonObject_8h_a7ae9069ccae9bac47d27515b9d7cbc02}
+
+
+function to convert a binson object to a json string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Obj} & The pointer to the binson object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string buffer which contains the json string, please free this buffer after use. 
+\end{DoxyReturn}
